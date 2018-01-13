@@ -4,3 +4,9 @@ h1{
 p{
   font-family: sans-serif;
 }
+#pageTwo{
+  display: none;
+}
+#result{
+  display: none;
+}
