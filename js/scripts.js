@@ -7,12 +7,13 @@ $(document).ready(function() {
     var appAnswer = $("input:radio[name=app]:checked").val();
     var easyHardAnswer = $("input:radio[name=easyHard]:checked").val();
     var teachAnswer = $("input:radio[name=teach]:checked").val();
-
-    if (appAnswer === "appJava" && easyHardAnswer ==="easyPython" && teachAnswer ==="teachPython"){
-      var trackResults = "track1"
+    var lengthAnswer = $("input:radio[name=length]:checked").val();
+    var slowOrFastAnswer = $("input:radio[name=slowOrFast]:checked").val();
+    if (appAnswer === "appJava" && easyHardAnswer ==="easyPython" && teachAnswer ==="teachPython" && lengthAnswer === "shortPython" && slowOrFastAnswer === "fastPython"){
+      var trackResults = "track 1"
     }
-    else if (appAnswer === "appRuby" && easyHardAnswer === "hardJava" && teachAnswer === "noTeachJava"){
-      var trackResult = "track2"
+    else {
+      var trackResults = "track 2"
     }
     if (appAnswer && easyHardAnswer && teachAnswer) {
   $("#track").empty().append(trackResults);
